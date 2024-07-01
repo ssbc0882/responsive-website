@@ -18,6 +18,12 @@ body {
   color: var(--text-color);
 }
 
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
 .visually-hidden {
   position: absolute;
   left: -10000px;

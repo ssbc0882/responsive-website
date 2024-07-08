@@ -41,3 +41,22 @@
     max-width: 50ch;
   }
 }
+
+// FLEXBOX MEDIA QUERIES
+
+// INTRESINIC LAYOUT
+// &__wrapper {
+//   display: flex;
+//   justify-content: center;
+//   flex-wrap: wrap;
+//   gap: 40px 5.5%;
+// }
+
+// &__item {
+//   text-align: center;
+//   flex: 0 1 u.rem(346);
+
+//   @include u.breakpoint(large) {
+//     text-align: start;
+//   }
+// }

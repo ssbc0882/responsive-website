@@ -24,6 +24,11 @@ img {
   width: 100%;
 }
 
+figure,
+blockquote {
+  margin: 0;
+}
+
 .visually-hidden {
   position: absolute;
   left: -10000px;

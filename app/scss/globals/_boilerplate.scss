@@ -18,6 +18,11 @@ body {
   color: var(--text-dark);
 }
 
+input,
+button {
+  font-family: u.$font;
+}
+
 img {
   display: block;
   height: auto;

@@ -15,6 +15,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <script defer src="/app/js/bodyScrollLock.min.js"></script>
+    <script defer src="/app/js/script.js"></script>
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <title>Mythos</title>
@@ -34,17 +36,42 @@
           />
         </a>
         <nav>
-          <ul class="topnav__links">
-            <li class="topnav__item">
-              <a href="#" class="topnav__link">Features</a>
-            </li>
-            <li class="topnav__item">
-              <a href="#" class="topnav__link">Pricing</a>
-            </li>
-            <li class="topnav__item">
-              <a href="#" class="topnav__link">About</a>
-            </li>
-          </ul>
+          <span id="nav-label" hidden>Navigation</span>
+          <div id="overlay" class="topnav__overlay"></div>
+
+          <button
+            id="btnOpen"
+            class="topnav__open"
+            aria-expanded="false"
+            aria-labelledby="nav-label"
+          >
+            <img src="/img/hamburger.svg" width="30" height="23" alt="" />
+          </button>
+
+          <div
+            id="menuTopNav"
+            class="topnav__menu"
+            role="dialog"
+            aria-labelledby="nav-label"
+          >
+            <button id="btnClose" class="topnav__close">
+              <img src="/img/close-button.svg" width="26" height="26" alt="" />
+            </button>
+            <ul class="topnav__links">
+              <li class="topnav__item">
+                <a href="#" class="topnav__link">Home</a>
+              </li>
+              <li class="topnav__item">
+                <a href="#" class="topnav__link">Features</a>
+              </li>
+              <li class="topnav__item">
+                <a href="#" class="topnav__link">Pricing</a>
+              </li>
+              <li class="topnav__item">
+                <a href="#" class="topnav__link">About</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -288,7 +315,7 @@
         </section>
       </article>
     </main>
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <h2 class="visually-hidden">Footer</h2>
       <div class="footer__wrapper wrapper">
         <section class="footer__logo">
@@ -416,6 +443,5 @@
         </section>
       </div>
     </footer>
-    <script src="/app/js/script.js"></script>
   </body>
 </html>

@@ -1,7 +1,6 @@
 @use "functions" as f;
 
 @mixin fullwidth {
-  color: var(--text-light);
   text-align: center;
 
   &__description {
